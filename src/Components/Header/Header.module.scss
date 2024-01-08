@@ -1,0 +1,93 @@
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    .headerNav {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: transparent;
+        font-family: 'Rajdhani', sans-serif;
+
+        .headerLogo {
+            text-decoration: none;
+            padding: 20px 0 20px;
+
+            .headerLogoImg {
+                max-height: 46px;
+
+                path {
+                    fill: white;
+                }
+            }
+
+            .headerLogoText {
+                color: white;
+                font-weight: 400;
+                margin: 0;
+                font-size: 20px;
+            }
+        }
+
+        .headerList {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            height: 105px;
+
+            .headerListItem {
+                list-style-type: none;
+                display: flex;
+                align-items: center;
+                height: 100%;
+
+                .headerListLink {
+                    font-weight: 400;
+                    font-size: 20px;
+                    text-decoration: none;
+                    color: white;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            .headerListItemClick {
+                list-style-type: none;
+                display: flex;
+                align-items: center;
+                height: 100%;
+                border-bottom: 3px solid white;
+
+                .headerListLink {
+                    font-weight: 400;
+                    font-size: 20px;
+                    text-decoration: none;
+                    color: white;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+
+        .headerBtn {
+            background-color: #096f92;
+            color: white;
+            border: none;
+            border-radius: 35px;
+            padding: 8px 25px;
+            font-size: 15px;
+
+            &:hover {
+                cursor: pointer;
+                background-color: #074256;
+            }
+        }
+    }
+}
