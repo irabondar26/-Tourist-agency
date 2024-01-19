@@ -2,9 +2,31 @@ import React, { useState } from 'react';
 import styles from "./MainPage.module.scss";
 import { NavLink } from "react-router-dom";
 import ToursList from '../../Components/ToursList/ToursList';
+import { Carousel, CarouselItem} from 'react-bootstrap';
 
 
 function MainPage() {
+
+  const testimonials = [
+    {
+      id: 1,
+      img: "https://livedemo00.template-help.com/wt_51676/images/quote-user-1-210x210.jpg",
+      name: 'Ann McMillan',
+      text: 'I wanted to thank you very much for planning the trip to France for my boyfriend and me. It was amazing and exceeded my expectations! We had a wonderful time and were very pleased with the accommodations in Paris and Bayeux. Our private/small tour guides were fantastic! I appreciate all the effort to get us to the Eiffel Tower finally.'
+    },
+    {
+      id: 2,
+      img: "https://livedemo00.template-help.com/wt_51676/images/quote-user-2-210x210.jpg",
+      name: 'Debra Ortega',
+      text: 'I had a marvelous time in our travels to Madagascar, Zimbabwe and Botswana, I had just wonderful experiences.I loved the location of the Gorges Camp as I felt like it was only the time we got to see real and rural Africans and how they truly lived. The service was amazing and everyone was very attentive!'
+    },
+    {
+      id: 3,
+      img: "https://livedemo00.template-help.com/wt_51676/images/quote-user-3-210x210.jpg",
+      name: 'Samantha Smith',
+      text: "Just wanted to say many, many thanks for helping me set up an amazing Costa Rican adventure! My nephew and I had a blast! All of the accommodations were perfect as were the activities that we did (canopy, coffee tour, hikes, fishing, and massages!) We have such fond memories and can't thank you enough!"
+    }
+  ];
 
   const [selectorFromValue, setSelectorFromValue] = useState("Kyiv");
   const [selectorToValue, setSelectorToValue] = useState("Kyiv");
@@ -172,7 +194,21 @@ function MainPage() {
           <p className={styles.toursTitleAdditionText}>our best tours</p>
           <NavLink to="tours" className={styles.toursTitleAdditionBtn} >view all tours</NavLink>
         </div>
-        <ToursList/>
+        <ToursList />
+      </section>
+      <section className={styles.testimonials}>
+        <h2 className={styles.testimonialsTitle}>TESTIMONIALS</h2>
+        <Carousel>
+          {testimonials.map((el) =>
+            <CarouselItem key={el.id}>
+                <img src={el.img} alt="" />
+                <div>
+                  <h3>{el.name}</h3>
+                  <p>{el.text}</p>
+                </div>
+            </CarouselItem>
+          )}
+        </Carousel>
       </section>
     </div >
   );
