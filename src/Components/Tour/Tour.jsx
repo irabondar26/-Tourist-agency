@@ -14,13 +14,13 @@ function Tour({ el }) {
                 <img className={styles.tourImg} src={el.img} alt="" />
                 {mouseEnter ?
                     <div className={styles.tourLinkWrapper}>
-                        <NavLink className={styles.tourLink} to="/tour">learn more</NavLink>
+                        <NavLink className={styles.tourLink} to="/tour">Подробніше</NavLink>
                     </div>
                     : null}
             </div>
             <NavLink className={styles.tourInfo} to="/tour">
                 <p className={styles.tourInfoTitle}>{`${el.country}, ${el.city}`}</p>
-                <p className={styles.tourInfoPrice}>{`from $${el.price}`}</p>
+                <p className={styles.tourInfoPrice}>{`$${el.price}`}</p>
             </NavLink>
         </div>
     );

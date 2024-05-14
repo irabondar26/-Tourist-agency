@@ -10,28 +10,28 @@ function ToursList() {
             country:"France",
             city:"Paris",
             price: 280,
-            img:"https://livedemo00.template-help.com/wt_51676/images/landing-private-airlines-01-570x370.jpg",
+            img:"https://images.adsttc.com/media/images/5d44/14fa/284d/d1fd/3a00/003d/newsletter/eiffel-tower-in-paris-151-medium.jpg?1564742900",
         },
         {
             id: 2,
             country:"USA",
             city:"Boston",
             price: 480,
-            img:"https://livedemo00.template-help.com/wt_51676/images/landing-private-airlines-02-570x370.jpg",
+            img:"https://www.travelandleisure.com/thmb/_aMbik8KZYsUKc_6_XNeAOzPi84=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/boston-massachusetts-BOSTONTG0221-719aef2eeb1c4929b6c839715e34a69e.jpg",
         },
         {
             id: 3,
             country:"Italy",
             city:"Venice",
             price: 350,
-            img:"https://livedemo00.template-help.com/wt_51676/images/landing-private-airlines-03-570x370.jpg",
+            img:"https://thumbs.dreamstime.com/b/top-view-old-town-vanice-sunset-top-view-old-town-vanice-sunset-italy-96710225.jpg",
         },
         {
             id: 4,
             country:"Spain",
             city: "Benidorm",
             price: 350,
-            img:"https://livedemo00.template-help.com/wt_51676/images/landing-private-airlines-04-570x370.jpg",
+            img:"https://www.costablancahills.com/objetos/temp/source/propertysun/costablancahills-noticias_6441083c468b8-source.jpg",
         }
     ];
 

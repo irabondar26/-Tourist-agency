@@ -1,0 +1,29 @@
+@import "../../styles/mixin.scss";
+
+.tourPageWrapper {
+    padding-top: 150px;
+
+    .tourPageTitle {
+        padding: 0 180px;
+        color: black;
+        text-transform: uppercase;
+        text-transform: uppercase;
+        font-weight: 800;
+        padding-right: 180px;
+        padding-left: 180px;
+        font-size: 40px;
+
+        @include width_1271 {
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+
+        @include width_576 {
+            font-size: 30px;
+            padding-left: 0;
+            padding-right: 0;
+            text-align: center;
+        }
+
+    }
+}
