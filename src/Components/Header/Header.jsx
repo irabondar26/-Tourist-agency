@@ -63,7 +63,6 @@ function Header() {
                     <NavLink to={"contacts"} className={styles.headerListLink}>Контакти</NavLink>
                 </li>
             </ul>
-            <button className={clickBtn?styles.headerBtnClick:styles.headerBtn}>Увійти</button>
         </nav>
 
         </div >

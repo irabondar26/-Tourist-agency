@@ -231,6 +231,7 @@
                     font-weight: 400;
 
                     .infoDateBtn {
+                        text-align: center;
                         margin-top: 5px;
                         font-size: 18px;
                         font-weight: 300;
@@ -324,6 +325,10 @@
                 border: none;
                 text-transform: uppercase;
                 color: #096f92;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
 
                 &:hover {
                     color: white;

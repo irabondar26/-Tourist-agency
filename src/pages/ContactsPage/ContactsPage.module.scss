@@ -1,0 +1,335 @@
+@import "../../styles/style.scss";
+@import "../../styles/mixin.scss";
+
+.contacts {
+    font-family: 'Rajdhani', sans-serif;
+    margin: 0;
+    padding-top: 120px;
+    padding-bottom: 50px;
+
+    .contactsInfoWrapper {
+        padding-left: 180px;
+        padding-right: 180px;
+        margin-bottom: 50px;
+
+        .contactsInfoTitle {
+            font-size: 1.875rem;
+            font-weight: 400;
+            color: black;
+            margin-bottom: 30px;
+
+            @include width_576 {
+                font-size: 1.575rem;
+            }
+        }
+
+        .contactsInfo {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 50px;
+            border-radius: 35px;
+            border: 3px solid rgba(7, 66, 86);
+
+            p {
+                margin-bottom: 0;
+            }
+
+            .contactsInfoImgWrapper {
+                position: relative;
+                width: 500px;
+                height: 500px;
+
+                @include width_880 {
+                    width: 100%;
+                    height: 85%;
+                }
+
+                .contactsInfoImg {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 35px;
+                }
+
+                .logo {
+                    position: absolute;
+                    top: calc(50% - 35px);
+                    left: calc(50% - 53px);
+
+                    .logoImg {
+
+                        max-height: 45px;
+
+                        path {
+                            fill: white;
+                        }
+
+                        @include width_880 {
+                            max-height: 35px;
+                        }
+                    }
+
+                    .logoText {
+                        color: white;
+                        font-weight: 400;
+                        margin: 0;
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            .contactsInfoList {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                justify-content: flex-start;
+                align-items: flex-start;
+                padding-left: 0;
+                padding-right: 50px;
+                width: 53%;
+
+
+                .contactsInfoListElement {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 20px;
+
+                    .contactsInfoListElementLogo {
+                        width: 35px;
+                        height: 35px;
+                    }
+
+                    .contactsInfoListElementText {
+                        font-size: 18px;
+                        line-height: 1.54;
+                        color: black;
+
+                        @include width_992 {
+                            font-size: 15px;
+                        }
+
+                        @include width_440 {
+                            font-size: 12px;
+                        }
+                    }
+
+                    .contactsInfoListElementLink {
+                        font-size: 18px;
+                        line-height: 1.54;
+                        color: #096f92;
+                        font-weight: 600;
+
+                        @include width_992 {
+                            font-size: 15px;
+                        }
+
+                        @include width_440 {
+                            font-size: 12px;
+                        }
+                    }
+
+                    @include width_992 {
+                        gap: 15px;
+                        font-size: 15px;
+                    }
+
+                }
+
+                .contactsInfoListElementSocial {
+                    width: 100%;
+                    border-top: 2px solid gray;
+                    padding-top: 20px;
+
+                    .contactsInfoListElementText {
+                        font-size: 18px;
+                        line-height: 1.54;
+                        color: black;
+                        margin-bottom: 10px;
+
+                        @include width_992 {
+                            font-size: 15px;
+                        }
+
+                        @include width_440 {
+                            font-size: 12px;
+                        }
+                    }
+
+
+                    .contactsInfoListElementLinksWrapper {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        gap: 20px;
+
+                        .contactsInfoListElementSocialLink {
+                            width: 35px;
+                            height: 35px;
+
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+
+                @include width_992 {
+                    padding-right: 30px;
+                    gap: 20px;
+                }
+
+                @include width_880 {
+                    width: 70%;
+                }
+
+                @include width_576 {
+                    padding-left: 30px;
+                    width: 100%;
+                }
+            }
+
+            @include width_992 {
+                gap: 30px;
+            }
+
+            @include width_880 {
+                flex-direction: column;
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            @include width_576 {
+                align-items: flex-start;
+            }
+        }
+
+        @include width_1415 {
+            padding-left: 85px;
+            padding-right: 85px;
+        }
+
+        @include width_672 {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    }
+
+    .contactsTours {
+        margin-bottom: 50px;
+
+        .contactsToursTitle {
+            margin-bottom: 30px;
+            padding-left: 180px;
+            padding-right: 180px;
+
+            @include width_1415 {
+                padding-left: 85px;
+                padding-right: 85px;
+            }
+
+            @include width_672 {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+        }
+    }
+
+    .contactsTestimonials {
+
+        .contactsTestimonialsTitle {
+            margin-bottom: 30px;
+            padding-left: 180px;
+            padding-right: 180px;
+
+            @include width_1415 {
+                padding-left: 85px;
+                padding-right: 85px;
+            }
+
+            @include width_672 {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+        }
+
+        .testimonialsSlider {
+            padding-bottom: 50px;
+
+            .sliderItem {
+                padding-left: 100px;
+                padding-right: 100px;
+                width: 100%;
+
+                .sliderItemImgWrapper {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .sliderItemImg {
+                        width: 200px;
+                        height: 200px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                }
+
+
+                .sliderItemTitle {
+                    font-size: 24px;
+                    font-weight: 600;
+                    margin-top: 30px;
+                    color: #004b6e;
+                    text-align: center;
+                }
+
+                .sliderItemText {
+                    text-align: center;
+                    width: 90%;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        @include width_576 {
+            display: none;
+        }
+    }
+
+    .footer {
+        padding: 35px 35px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 20px;
+
+        .footerLogo {
+            text-decoration: none;
+            // padding: 20px 0 20px;
+            display: block;
+
+            .footerLogoImg {
+                max-height: 46px;
+
+                path {
+                    fill: #006a8e;
+                }
+            }
+
+            .footerLogoText {
+                color: #006a8e;
+                font-weight: 400;
+                margin-top: 5px;
+                margin-bottom: 0;
+                font-size: 20px;
+            }
+        }
+
+        .footerText {
+            margin-bottom: 0;
+        }
+    }
+}

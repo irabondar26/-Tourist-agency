@@ -2,28 +2,330 @@
 
 .tourPageWrapper {
     padding-top: 150px;
+    font-family: 'Rajdhani', sans-serif;
 
-    .tourPageTitle {
-        padding: 0 180px;
-        color: black;
-        text-transform: uppercase;
-        text-transform: uppercase;
-        font-weight: 800;
+    .tourPageTitleWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         padding-right: 180px;
         padding-left: 180px;
-        font-size: 40px;
+        margin-bottom: 15px;
+        margin-top: 15px;
 
-        @include width_1271 {
+        .tourPageTitle {
+            color: black;
+            text-transform: uppercase;
+            text-transform: uppercase;
+            font-weight: 800;
+            font-size: 40px;
+
+            @include width_576 {
+                font-size: 30px;
+                text-align: center;
+            }
+
+        }
+
+        .tourPageBtn {
+            .tourPageBtnImg {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        @include width_1415 {
             padding-left: 80px;
             padding-right: 80px;
         }
 
-        @include width_576 {
-            font-size: 30px;
-            padding-left: 0;
-            padding-right: 0;
-            text-align: center;
+
+    }
+
+    .formWrapper {
+        padding-right: 180px;
+        padding-left: 180px;
+
+        .form {
+            width: 100%;
+            padding: 25px 30px;
+            background-color: rgb(7, 66, 86);
+            border-radius: 15px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            gap: 15px;
+
+            .formCities {
+                position: relative;
+                display: block;
+                font-size: 15px;
+                color: white;
+
+
+                .formSelectBtn {
+                    font-size: 18px;
+                    background-color: white;
+                    position: relative;
+                    margin-top: 5px;
+                    display: block;
+                    border: none;
+                    padding: 15px 44px 15px 24px;
+                    border-radius: 35px;
+                    height: 60px;
+                    text-align: left;
+                    color: black;
+                    width: 140px;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 40%;
+                        right: 25px;
+                        width: 8px;
+                        height: 8px;
+                        pointer-events: none;
+                        border: solid black;
+                        border-width: 0 2px 2px 0;
+                        display: inline-block;
+                        transform: rotate(45deg);
+                    }
+
+                    @include width_992 {
+                        height: 45px;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                    }
+
+                    @include width_880 {
+                        height: 53px;
+                        padding-top: 15px;
+                        padding-bottom: 15px;
+                    }
+                }
+
+                .formList {
+                    width: 140px;
+                    margin-top: 5px;
+                    position: absolute;
+                    border-radius: 35px;
+                    background-color: white;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    flex-direction: column;
+                    gap: 20px;
+                    padding: 20px;
+                    z-index: 1;
+
+                    .formListElement {
+                        width: 100%;
+                        font-weight: 400;
+                        color: black;
+
+                        &:hover {
+                            color: #096f92;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .displayNone {
+                    display: none;
+                }
+
+                @include width_992 {
+                    font-size: 15px;
+                }
+
+                @include width_880 {
+                    font-size: 18px;
+                }
+
+                @include width_576 {
+                    margin-bottom: 5px;
+                }
+            }
+
+            .infoTitle {
+                font-size: 15px;
+                width: 140px;
+                font-weight: 400;
+                color: white;
+
+                .infoDateBtn {
+                    margin-top: 5px;
+                    font-size: 18px;
+                    background-color: white;
+                    border: none;
+                    border-radius: 35px;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    width: 100%;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                    @include width_992 {
+                        height: 45px;
+                    }
+
+                    @include width_880 {
+                        height: 53px;
+                    }
+                }
+
+                .infoCounter {
+                    margin-top: 5px;
+                    font-size: 23px;
+                    font-weight: 500;
+                    background-color: white;
+                    border: none;
+                    border-radius: 35px;
+                    height: 60px;
+                    width: 140px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    color: black;
+
+                    .infoCounterBtn {
+                        border: none;
+                        background-color: transparent;
+                        width: 20px;
+                        height: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 23px;
+
+                        &:hover {
+                            color: #096f92;
+                            cursor: pointer;
+                        }
+                    }
+
+                    @include width_992 {
+                        height: 45px;
+                    }
+
+                    @include width_880 {
+                        height: 53px;
+                    }
+
+
+                }
+
+                @include width_992 {
+                    font-size: 15px;
+                }
+
+                @include width_576 {
+                    margin-top: 5px;
+                }
+            }
+
+            @include width_1271 {
+                padding: 25px 15px;
+                flex-wrap: wrap;
+            }
+
+            .formBtn {
+                font-size: 18px;
+                font-weight: 400;
+                height: 60px;
+                width: 140px;
+                border-radius: 35px;
+                background-color: white;
+                border: none;
+                text-transform: uppercase;
+                color: #096f92;
+
+                &:hover {
+                    color: white;
+                    background-color: #096f92;
+                    cursor: pointer;
+                    transition: .5s;
+                }
+
+                @include width_992 {
+                    height: 45px;
+                }
+
+            }
         }
 
+        @include width_1415 {
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+    }
+
+    .tourList {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 15px;
+        margin-top: 50px;
+        padding: 0 180px;
+        margin-bottom: 50px;
+
+        @include width_1271 {
+            padding-left: 80px;
+            padding-right: 80px;
+            gap: 50px 40px;
+        }
+
+        @include width_992 {
+            padding-left: 50px;
+            padding-right: 50px;
+            gap: 20px 30px;
+        }
+
+        @include width_880 {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .footer {
+        padding: 35px 35px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 20px;
+
+        .footerLogo {
+            text-decoration: none;
+            display: block;
+
+            .footerLogoImg {
+                max-height: 46px;
+
+                path {
+                    fill: #006a8e;
+                }
+            }
+
+            .footerLogoText {
+                color: #006a8e;
+                font-weight: 400;
+                margin-top: 5px;
+                margin-bottom: 0;
+                font-size: 20px;
+            }
+        }
+
+        .footerText {
+            margin-bottom: 0;
+        }
     }
 }
